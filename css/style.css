@@ -9,6 +9,7 @@
     --btn-focus: #188CE8;
     --background-btn-port: #F5F4FA;
     --border-cont: #EEEEEE;
+    --soc-link: #AFB1B8;
    }
 
    p,
@@ -132,13 +133,13 @@ body{
 }
 
 .header-tel{
-    color: #757575;
+    color: var(--subtitle-colour); 
     width: 100%;
     height: 100%;
     display: flex;
 }
 .header-mail{
-    color: #757575;
+    color: var(--subtitle-colour);
     width: 100%;
     height: 100%;
     display: flex;
@@ -179,6 +180,9 @@ body{
  padding-bottom: 200px;
 }
 .hero{
+    text-align: center;
+    align-items: center;
+    max-width: 1600px;
     background-color: var(--color-section);
     text-align: center;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
@@ -214,6 +218,7 @@ body{
     border-color: transparent;
     padding: 10px 32px;
     margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
    .hero-btn-text:hover,
@@ -346,7 +351,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #AFB1B8;
+    color: var(--soc-link);
 }
 .team-soc-icon{
     fill: currentColor;
@@ -413,7 +418,7 @@ fill: #FFFFFF;
 .client-link:hover, 
 .client-link:focus{
 color: var(--accent-color);
-border: solid var(--accent-color);
+border-color: var(--accent-color);
 }
 
 .subject{
@@ -462,10 +467,9 @@ border: solid var(--accent-color);
     gap: 30px;
  }
 
- .projects-list:hover{
+ .projects-link:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-
- }
+}
 
  .project-list-content {
     padding-top: 20px;
@@ -473,9 +477,9 @@ border: solid var(--accent-color);
     color: var(--border-cont);
     padding-left: 24px;
     background-color: var(--hero-title);
-    border-left: 1px solid var(--border-cont);;
-    border-right: 1px solid var(--border-cont);;
-    border-bottom: 1px solid var(--border-cont);;
+    border-left: 1px solid var(--border-cont);
+    border-right: 1px solid var(--border-cont);
+    border-bottom: 1px solid var(--border-cont);
 }
 
 .project-name {
@@ -519,7 +523,7 @@ border: solid var(--accent-color);
 }
 .footer-nav{
     display: block;
-    margin-right: 70px;
+   
 }
 
 .footer-address{
@@ -571,8 +575,7 @@ border: solid var(--accent-color);
     gap: 10px;
 }
 .footer-soc{
-    padding-bottom: 72px;
-   margin-left: 70px;
+    margin-left: 70px;
 }
 
 .footer-soc-link {
